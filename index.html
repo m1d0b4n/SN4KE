@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="score_title">Your score :</div>
-    <div class="score">0</div>
+
+<body id="body">
+    <div class="score-bar">
+        <div class="score_title">Your score :</div>
+        <div class="score">0</div>
+    </div>
     <canvas id="gameCanvas"></canvas>
-    <div id="horrorImage" class="hidden">
-        <img src="https://www.watson.ch/fr/imgdb/86d6/Qx,A,0,0,1200,790,500,329,200,131/8321374071066122" alt="Horror Image">
+    <div id="dpad" class="hidden_dpad">
+        <button id="up" class="dpad-button">↑</button>
+        <div id="middle">
+            <button id="left" class="dpad-button">←</button>
+            <button id="center" class="dpad-button" disabled></button>
+            <button id="right" class="dpad-button">→</button>
+        </div>
+        <button id="down" class="dpad-button">↓</button>
+    </div>
+    <div id="horrorImage">
+        <img src="https://www.watson.ch/fr/imgdb/86d6/Qx,A,0,0,1200,790,500,329,200,131/8321374071066122"
+            alt="Horror Image">
     </div>
     <script src="snake.js"></script>
 </body>
+
 </html>

@@ -12,6 +12,8 @@ let snake;
 let fruit;
 
 let scarySound = new Audio('./piste_1.mp3');
+scarySound.preload = 'auto';
+scarySound.load();
 
 (function setup() {
     snake = new Snake();
